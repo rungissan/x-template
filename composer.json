@@ -1,0 +1,29 @@
+{
+  "name": "x/x-template",
+  "description": "Neutral website template",
+  "type": "typo3-cms-extension",
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "license": [
+    "GPL-2.0+"
+  ],
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "extension-key": "x_template",
+      "web-dir": "web"
+    }
+  },
+  "replace": {
+    "x_template": "self.version",
+    "typo3-ter/x-template": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "X\\XTemplate\\": "Classes/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
